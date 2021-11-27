@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>StarBelly</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="tabs">
+        <button id="home-btn">Home</button>
+        <button id="menu-btn">Menu</button>
+        <button id="call-btn">Call Us</button>
+      </div>
+      <div id="content">
+        <!-- home -->
+        <!-- <header id="header">
+          <div id="logo"><h1>StarBelly</h1></div>
+          <div id="hero">
+            <h2>Fill your belly while watching the stars</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              eaque natus provident illo error accusantium expedita vitae quia
+              ipsum iusto?
+            </p>
+          </div>
+        </header> -->
+
+        <!-- menu -->
+        <!-- <section id="menu">
+          <div class="item">
+            <h3><i class="fas fa-hamburger"></i> Something Delicious</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis, earum!
+            </p>
+          </div>
+        </section> -->
+
+        <!-- call -->
+        <!-- <section class="call">
+          <h3 class="call-heading">
+            Please call us to have your food delivered at your doorstep
+          </h3>
+          <div class="info">
+            <p>Call-To : (+91)-8553271820</p>
+          </div>
+          <div class="loc-info">
+            <p>
+              Please drop by our restaurant and enjoy our out of sky vibe and
+              ambience
+            </p>
+          </div>
+          <div id="map"></div>
+        </section> -->
+      </div>
+    </div>
+    <script>
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 18.25, lng: 77.412 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQdvBsR6osfJ0B_dFr5BBoAMvZ0EDE18&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
